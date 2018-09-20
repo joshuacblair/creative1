@@ -1,0 +1,17 @@
+body {
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+	color: white;
+	text-align: center;
+	vertical-align: top;
+}
+h2 {
+	color: white;
+	text-align: justify;
+}
+#bio {
+	width: 40%;
+	color: white;
+}

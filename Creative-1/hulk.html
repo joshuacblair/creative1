@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>MARVEL Database</title>
+    <link rel="stylesheet" href="hulk/Hulk.css" />
+
+</head>
+
+<body id="MainBody">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">MARVEL Database</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="spiderman.html">Spider-Man</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ironman.html">Iron-Man</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hulk.html">The Hulk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="thor.html">Thor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="starlord.html">Star-Lord</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="captainamerica.html">Captain America</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <font id="desc" color="black">Mouse over me! Click on me!</font>
+    <div>
+        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="BGSwap1()" border="0" src="hulk/Hulk1.jpg" width="240" height="150" align="center">
+        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="BGSwap2()" border="0" src="hulk/Hulk2.jpg" width="240" height="150" align="center">
+    </div>
+
+    <script>
+        function bigImg(x) {
+            x.style.height = "400px";
+            x.style.width = "640px";
+        }
+
+        function normalImg(x) {
+            x.style.height = "150px";
+            x.style.width = "240px";
+        }
+
+        function BGSwap1() {
+            document.getElementById("desc").innerHTML = ""
+            document.body.style.backgroundImage = "url('hulk/Hulk1.jpg')";
+        }
+
+        function BGSwap2() {
+            document.getElementById("desc").innerHTML = ""
+            document.body.style.backgroundImage = "url('hulk/Hulk2.jpg')";
+        }
+    </script>
+
+    <h1>
+        The Hulk
+    </h1>
+    <div id="bio">
+        <h2>
+            BIO:
+        </h2>
+        <ul>
+            Height: Bruce: 5'9", Hulk: 7'6" <br> Weight: Bruce: 128 lbs., Hulk: 1150 lbs.<br> Gender: Male<br> Eyes: Bruce: brown, Hulk: green<br> Hair: Bruce: brown, Hulk: green<br>
+            <br><br><br> Story: <br> Dr. Bruce Banner lives a life caught between the soft spoken scientist he has always been and the uncontrollable green monster powered by his rage.
+        </ul>
+    </div>
+
+</body>
+
+</html>
